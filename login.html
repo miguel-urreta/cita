@@ -181,6 +181,12 @@
             window.location.replace('index.html');
             console.log("desde Iniciar");
         }
+
+        $(document).ready(function () {
+        //Quitanto publicidad del hostin
+            $("a[title='Hosted on free web hosting 000webhost.com. Host your own website for FREE.']").css("display","none");
+
+        });
     </script>
 </body>
 </html>
