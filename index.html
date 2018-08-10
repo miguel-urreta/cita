@@ -179,7 +179,10 @@
             <section id="principal" class="section feature-box mb-3 mt-5 pt-4 pb-3">
 
                 <!-- Section heading -->
-                <h3 class="text-center text-uppercase font-weight-bold mb-5 mt-4 wow fadeIn" data-wow-delay="0.2s">UN CUENTO SIN TANTOS CUENTOS</h3>
+                <div class="text-center">
+                    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalRegistro">UN CUENTO SIN TANTOS CUENTOS</button>
+                    
+                </div>
                 <!-- Section description -->
                 <p class="text-justify my-5 w-responsive mx-auto wow fadeIn" data-wow-delay="0.2s">
 
@@ -196,7 +199,7 @@
                     <div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
                         <i class="fa fa-cubes orange-text-2 fa-4x mb-4"></i>
                         <h5 class="font-weight-bold mb-4">Patrocinador</h5>
-                        <p class="text-justify">Te encuentras estresado, aburrido, deprimido, deseas en ese momento platicar con alguien que esté solo para ti, salir a comer, ir al cine, bailar, ser acompañado a un evento público como una boda, la concierto o cuantas veces has deseado que te vean con una linda persona disponible para disfrutar la vida contigo de manera pública o privada con la mente más abierta del mundo, disponible a cumplir tus necesidades, el tiempo que tú quieras donde tú quieras y cuando quieras. </p>
+                        <p class="text-justify">Te encuentras estresado, aburrido, deprimido, deseas en ese momento platicar con alguien que esté solo para ti, salir a comer, ir al cine, bailar, ser acompañado a un evento público como una boda, un concierto. Cuántas veces has deseado que te vean con una linda persona disponible para disfrutar la vida contigo de manera pública o privada con la mente más abierta del mundo, disponible a cumplir tus necesidades, sueños y fantasías, el tiempo que tú quieras, donde tú quieras y cuando quieras.</p>
 
                     </div>
                     <!-- Grid column -->
@@ -210,20 +213,17 @@
                     <!-- Grid column -->
 
                 </div>
+                <!--
                 <div class="row text-center">
-                	<!-- Grid column -->
                 	<div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
                 	    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalPatrocinador">PATROCINADOR</button>
 
                 	</div>
-                	<!-- Grid column -->
 
-                	<!-- Grid column -->
                 	<div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
                 	    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalAcompanante">ACOMPAÑANTE</button>
                 	</div>
-                	<!-- Grid column -->
-                </div>
+                </div>-->
                 <!-- Grid row -->
 
             </section>
@@ -928,3 +928,108 @@
     </div>
 </div>
 <!-- Central Modal modalAcompanante Info-->
+
+<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog cascading-modal" role="document">
+        <!--Content-->
+        <div class="modal-content">
+
+            <!--Modal cascading tabs-->
+            <div class="modal-c-tabs">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist" style="background-color: #37474F !important;">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Patrocinador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Acompañante</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 7-->
+                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body mb-1">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Correo</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Contraseña</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repetir Contraseña</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button type="button" class="btn btn-outline-primary waves-effect" style="width: 200px; border: 2px solid #201C1C !important; color: #201C1C !important;"> Registro<i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+                        </div>
+                        <!--Footer
+                        <div class="modal-footer">
+                            <div class="options text-center text-md-right mt-1">
+                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>-->
+
+                    </div>
+                    <!--/.Panel 7-->
+
+                    <!--Panel 8-->
+                    <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput12">Correo</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-5">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput13">Contraseña</label>
+                            </div>
+
+                            <div class="md-form form-sm mb-4">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repetir Contraseña</label>
+                            </div>
+
+                            <div class="text-center form-sm mt-2">
+                                <button type="button" class="btn btn-outline-primary waves-effect" style="width: 200px; border: 2px solid #201C1C !important; color: #201C1C !important;"> Registro<i class="fa fa-sign-in ml-1"></i></button>
+                            </div>
+
+                        </div>
+                        <!--Footer
+                        <div class="modal-footer">
+                            <div class="options text-right">
+                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+                            </div>
+                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+                        </div>-->
+                    </div>
+                    <!--/.Panel 8-->
+                </div>
+
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!--Modal: Login / Register Form-->
