@@ -19,6 +19,14 @@
         .jarallax {
           height: 100%;
         }
+        html,
+        body,
+        header,
+        .colors {
+          background-color: #000000 !important;
+          color: #fff;
+           
+        }
 
         @media (min-width: 560px) and (max-width: 740px) {
             html,
@@ -89,7 +97,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#">Inicio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -108,14 +116,14 @@
                             <a class="nav-link" href="membresia.html" data-offset="90">Membresía</a>
                         </li>
                     </ul>
-                    <!-- Social Icon  -->
+                   -->
                    <a class="navbar-brand" href="login.html"><i class="fa fa-user"></i>Iniciar Sesión</a>
-                </div>
+                </div> 
             </div>
         </nav>
 
         <!-- Intro Section -->
-        <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(img/oldshush_desktop.b31aed05.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div id="home" class="view jarallax colors" data-jarallax='{"speed": 0.2}' style="background-image: url(img/oldshush_desktop.b31aed05.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
             <div class="mask rgba-black-strong">
                 <div class="container h-100 d-flex justify-content-center align-items-center">
                     <div class="row smooth-scroll">
@@ -128,14 +136,15 @@
                             				<h5>ENCUENTRA UNA AVENTURA O AL AMOR DE TU VIDA SIN TANTO CUENTO</h5>
                             			</div>
                             			<div class="col-lg-7">
-                            				<h1 class="display-6 font-weight-bold">ACOMPAÑEME</h1>
+                            				<h4 class="display-6 font-weight-bold">Disfruta tu vida ya!!</h4>
                             			</div>
                             			<div class="col-lg-7">
-                            				<button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalInvitado">HACER CITA HOY INVITADO</button>
+                            				<a class="btn btn-outline-primary waves-effect" style="width: 300px;  border: 4px solid #D4D4D4 !important; color: #D4D4D4 !important;" href="#principal" data-offset="90"><h4 class="display-6 font-weight-bold">ACOMPAÑEME</h4></button></a>
+                            					
                             			</div>
-                            			<div class="col-lg-7">
+                            			<!--<div class="col-lg-7">
                             				<h2 class ="display-7 font-weight-bold text-uppercase">Disfruta tu vida ya!!</h2>
-                            			</div>
+                            			</div>-->
                             		</div>
 
                             	</div>	
@@ -171,7 +180,7 @@
     <!-- Navigation & Intro -->
     
     <!-- Main content -->
-    <main>
+    <main class="colors">
         
         <div class="container">
             
@@ -180,7 +189,9 @@
 
                 <!-- Section heading -->
                 <div class="text-center">
-                    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalRegistro">UN CUENTO SIN TANTOS CUENTOS</button>
+					
+					<h4 class="display-6 font-weight-bold">UN CUENTO SIN TANTOS CUENTOS</h4>
+                    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalInvitado">TEN UNA CITA YA SIN REGISTRO</button>
                     
                 </div>
                 <!-- Section description -->
@@ -188,7 +199,7 @@
 
                  Nuestra misión es que no pierda tiempo ni el patrocinador en encontrar, ni el acompañante en no ganar. En acompañame.com encontrara de inmediato personas hermosas y afines a usted.
 
-                Dispuesta a acompañarle en público o privado, para platicar tener una aventura o encontrar el amor de su vida, las citas son inmediatas o programadas con tiempo. También encontrará eventos exclusivos para los miembros que cuenten con membresía y recomendaciones de hoteles, bares y restaurantes entre mucho mas
+                Dispuesta a acompañarle en público o privado, para platicar tener una aventura o encontrar el amor de su vida, las citas son inmediatas o programadas con tiempo. También encontrará eventos exclusivos para los miembros que cuenten con membresía y recomendaciones de hoteles, bares y restaurantes entre muchos otros.
 
                 </p>
 
@@ -197,366 +208,32 @@
 
                     <!-- Grid column -->
                     <div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
-                        <i class="fa fa-cubes orange-text-2 fa-4x mb-4"></i>
-                        <h5 class="font-weight-bold mb-4">Patrocinador</h5>
-                        <p class="text-justify">Te encuentras estresado, aburrido, deprimido, deseas en ese momento platicar con alguien que esté solo para ti, salir a comer, ir al cine, bailar, ser acompañado a un evento público como una boda, un concierto. Cuántas veces has deseado que te vean con una linda persona disponible para disfrutar la vida contigo de manera pública o privada con la mente más abierta del mundo, disponible a cumplir tus necesidades, sueños y fantasías, el tiempo que tú quieras, donde tú quieras y cuando quieras.</p>
+                        <!--<i class="fa fa-cubes orange-text-2 fa-4x mb-4"></i>-->
+                        <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalPatrocinador">PATROCINADOR</button>
+                        <p class="text-justify">Te encuentras estresado, aburrido, deprimido, deseas en ese momento platicar con alguien que esté solo para ti, salir a comer, ir al cine, bailar, ser acompañado a un evento público como una boda, un concierto o Cuántas veces has deseado que te vean con una linda persona disponible para disfrutar la vida contigo de manera pública o privada con la mente más abierta del mundo, disponible a cumplir tus necesidades, el tiempo que tú quieras, donde tú quieras y cuando quieras.</p>
 
                     </div>
                     <!-- Grid column -->
 
                     <!-- Grid column -->
                     <div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
-                        <i class="fa fa-users orange-text-2 fa-4x mb-4"></i>
-                        <h5 class="font-weight-bold mb-4">Acompañante</h5>
-                        <p class="text-justify">Si eres joven, atractivo o atractiva, atrévete a ganar por salir en una cita a practicar, comer, ir al cine, bailar, concierto, fiesta, bar, un evento público o privado si eres de mente más abierta. No importa si eres hombre o mujer, si eres hetero o no, sabemos que podemos unir personas afines  y lo que empieza como una cita con un patrocinador, pueda terminar dándote estabilidad emocional y económica.</p>
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!--
-                <div class="row text-center">
-                	<div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
-                	    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalPatrocinador">PATROCINADOR</button>
-
-                	</div>
-
-                	<div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
-                	    <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #201C1C !important; color: #201C1C !important;" data-toggle="modal" data-target="#modalAcompanante">ACOMPAÑANTE</button>
-                	</div>
-                </div>-->
-                <!-- Grid row -->
-
-            </section>
-            <!-- Section: principal -->
-            
-            <hr class="mt-5 pb-4">
-
-           <!--Section: info-->
-                      <section id="info" class="section mt-4 mb-2">
-
-                          <!--Secion heading-->
-                          <h2 class="text-center my-5 font-weight-bold wow fadeIn" data-wow-delay="0.2s">titulo de la section</h2>
-
-                          <!--First row-->
-                          <div class="row">
-
-                              <!--First column-->
-                              <div class="col-lg-5 col-md-12 mb-5 pb-4 wow fadeIn" data-wow-delay="0.4s">
-
-                                  <!--Image-->
-                                  <img src="img/galeria/3.jpeg" class="img-fluid z-depth-1 rounded"
-                                      alt="My photo">
-
-                              </div>
-                              <!--First column-->
-
-                              <!--Second column-->
-                              <div class="col-lg-6 dark-grey-text ml-lg-auto col-md-12 wow fadeIn" data-wow-delay="0.4s">
-
-                                  <!--Description-->
-                                  <p align="justify">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minima assumenda deleniti.
-                                  </p>
-
-
-                                  <ul>
-                                      <li>Lorem ipsum dolor sit amet</li>
-                                      <li>Lorem ipsum dolor sit amet</li>
-                                      <li>Lorem ipsum dolor sit amet</li>
-                                      <li>Lorem ipsum dolor sit amet</li>
-                                  </ul>
-
-                              </div>
-                              <!--Second column-->
-
-                          </div>
-                          <!--First row-->
-
-                      </section>
-                      <!--Section: info-->
-
-
-        </div>
-
-        <!-- Streak -->
-         <hr class="mt-5 pb-4">
-        <div class="streak streak-photo streak-md"  style="background-image: url('img/5.jpg');">
-            <div class="flex-center mask rgba-indigo-strong" style=" background-color:rgba(0,0,0,.7) !important;">
-                <div class="text-center white-text">
-                    <h2 class="h2-responsive mb-7"><i class="fa fa-quote-left" aria-hidden="true"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <i class="fa fa-quote-right" aria-hidden="true"></i></h2>
-                    <h5 class="text-center font-italic wow fadeIn" data-wow-delay="0.2s">~ Erich Fromm</h5>
-                </div>
-            </div>
-        </div>
-        <!-- Streak -->
-
-        <div class="container">
-
-            <hr class="mt-5 mb-5">
-
-            <!-- Section: lugares -->
-            <section id="lugares" class="section mb-3">
-
-                <!-- Section heading -->
-                <h3 class="text-center text-uppercase font-weight-bold mb-5 mt-5 pt-5 wow fadeIn" data-wow-delay="0.2s">LUGARES</h3>
-
-                <!-- Section description -->
-                <p class="text-center my-5 w-responsive mx-auto wow fadeIn" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minima assumenda deleniti.</p>
-
-            </section>
-            <!-- Section: lugares -->
-
-        </div>
-
-        <div class="container-fluid">
-
-            <div class="row mb-5 wow fadeIn" data-wow-delay="0.4s">
-
-                <!-- Grid column -->
-                <div class="col-md-12 mb-5">
-
-                    <div id="mdb-lightbox-ui"></div>
-
-                    <!-- Full width lightbox -->
-                    <div class="mdb-lightbox">
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-
-                        </figure>
-                            <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-
-                        <figure class="col-md-3">
-                            <a href="img/galeria/2.jpg" data-size="1600x1067" data-toggle="modal" data-target="#modalLugares">
-                                <img src="img/galeria/2.jpg" class="img-fluid z-depth-1" style="width: 1600px !important; height: 180px !important;">
-                            </a>
-                        </figure>
-                    </div>
-                    <!-- Full width lightbox -->
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-
-        </div>
-              
-        <div class="container">
-            
-            <!-- Section: Contact -->
-            <section id="contact" class="section mb-5">
-
-                <!-- Section heading -->
-                <h3 class="text-center text-uppercase font-weight-bold mb-5 mt-4 pt-5 wow fadeIn" data-wow-delay="0.2s">Contactos</h3>
-
-                <!-- Section description -->
-                <p class="text-center my-5 w-responsive mx-auto wow fadeIn" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente mollitia? Autem delectus quod accusamus tempora, aperiam minima assumenda deleniti.</p>
-
-                <!-- Grid row -->
-                <div class="row wow fadeIn" data-wow-delay="0.4s">
-
-                    <!-- Grid column -->
-                    <div class="col-md-8 col-lg-9">
-                        <form>
-                            <!-- Grid row -->
-                            <div class="row">
-                                <!-- Grid column -->
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <div class="md-form">
-                                            <input type="text" id="form41" class="form-control">
-                                            <label for="form41" class="">Su Nombre</label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Grid column -->
-                                <div class="col-md-6">
-                                    <div class="md-form">
-                                        <div class="md-form">
-                                            <input type="text" id="form52" class="form-control">
-                                            <label for="form52" class="">Correo</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Grid row -->
-
-                            <!-- Second row -->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form">
-                                        <input type="text" id="form51" class="form-control">
-                                        <label for="form51" class="">Asunto</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Second row -->
-
-                            <!-- Third row -->
-                            <div class="row">
-                                <!-- Grid column -->
-                                <div class="col-md-12">
-
-                                    <div class="md-form">
-                                        <textarea type="text" id="form76" class="md-textarea form-control" rows="3"></textarea>
-                                        <label for="form76">Su Mensaje</label>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- Third row -->
-                        </form>
-
-                        <div class="text-center text-md-left mb-5 mt-4">
-                            <a class="btn btn-rounded btn-orange-2 white-text" style="background: #37474F !important;">Enviar</a>
-                        </div>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3">
-                        <ul class="text-center list-unstyled float-md-right">
-                            <li><i class="fa fa-map-marker fa-2x"></i>
-                                <p>Mexico</p>
-                            </li>
-
-                            <li><i class="fa fa-phone fa-2x"></i>
-                                <p>+ 01 234 567 89</p>
-                            </li>
-
-                            <li><i class="fa fa-envelope fa-2x"></i>
-                                <p>contact@acompañame.com</p>
-                            </li>
-                        </ul>
+                        <!--<i class="fa fa-users orange-text-2 fa-4x mb-4"></i>-->
+                        <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalRegistro">ACOMPAÑANTE</button>
+                        <p class="text-justify">Si eres joven, atractivo o atractiva, atrévete a ganar por salir en una cita a platicar, comer, ir al cine, bailar, concierto, fiesta, bar, un evento público o privado si eres de mente más abierta. No importa si eres hombre o mujer, si eres hetero o no, sabemos que podemos unir personas afines  y lo que empieza como una cita con un patrocinador, pueda terminar dándote estabilidad emocional y económica. Puede mantener su privacidad con su cara con filtro o antifas</p>
                     </div>
                     <!-- Grid column -->
 
                 </div>
 
             </section>
-            <!-- Section: Contact -->
+            <!-- Section: principal --> 
 
-       </div>
-       <!-- Fifth container -->
-        
+        </div>
+
+     
     </main>    
     <!-- Main content -->
 
-    <!-- Footer -->
-    <footer class="page-footer footer-tiles text-center text-md-left pt-4 mt-4">
-        
-        <!-- Footer Links -->
-        <div class="container mt-1 mb-2">
-           
-            <!-- Grid row -->
-            <div class="row">
-                
-                <!-- Grid column -->
-                <div class="col-lg-4 mt-2 mb-1 wow fadeIn" data-wow-delay="0.3s">
-                    <!-- About -->
-                    <div class="footer-socials">
-                    
-                        <!-- Facebook -->
-                        <a type="button" class="btn-floating special-color"><i class="fa fa-facebook"></i></a>
-                        <!-- Dribbble -->
-                        <a type="button" class="btn-floating special-color"><i class="fa fa-dribbble"></i></a>
-                        <!-- Twitter -->
-                        <a type="button" class="btn-floating special-color"><i class="fa fa-twitter"></i></a>
-                        <!-- Google + -->
-                        <a type="button" class="btn-floating special-color"><i class="fa fa-google-plus"></i></a>
-                        <!-- Linkedin -->
-                    
-                    </div>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none">
-                
-                <!-- Grid column -->
-                <div class=" col-lg-2 mt-2 mb-1 col-md-2 wow fadeIn" data-wow-delay="0.3s">
-                    
-                    <!-- Info -->
-                    <p><i class="fa fa-home mr-3"></i>Mexico</p>
-                    
-                    
-                </div>
-                <!-- Grid column --> 
-                <!-- Grid column -->
-                <div class="  col-lg-3 mt-2 mb-1 col-md-3 wow fadeIn" data-wow-delay="0.3s">
-                    
-                    <!-- Info -->
-                   
-                    <p><i class="fa fa-envelope mr-3"></i> info@acompañame.com</p>
-                    
-                    
-                </div>
-                <!-- Grid column --> 
-                <!-- Grid column -->
-                <div class="  col-lg-3 mt-2 mb-1 col-md-3 wow fadeIn" data-wow-delay="0.3s">
-                    
-                    <!-- Info -->
-                    
-                    <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-                    
-                </div>
-                <!-- Grid column -->
-                
-                <hr class="w-100 clearfix d-md-none">
-                
-                
-            </div>
-            <!-- Grid row -->
-            
-        </div>
-        <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright py-3 text-center wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                © 2018 Copyright: <a href="#" target="_blank">Miguel Salazar</a>
-            </div>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
 
     <!--  SCRIPTS  -->
     <!--  JQuery  -->
@@ -571,55 +248,6 @@
         new WOW().init();
 
         $(document).ready(function () {
-            var navListItems = $('div.setup-panel div a'),
-                allWells = $('.setup-content'),
-                allNextBtn = $('.nextBtn'),
-                allPrevBtn = $('.prevBtn');
-
-            allWells.hide();
-
-            navListItems.click(function (e) {
-                e.preventDefault();
-                var $target = $($(this).attr('href')),
-                    $item = $(this);
-
-                if (!$item.hasClass('disabled')) {
-                    navListItems.removeClass('btn-indigo').addClass('btn-default');
-                    $item.addClass('btn-indigo');
-                    allWells.hide();
-                    $target.show();
-                    $target.find('input:eq(0)').focus();
-                }
-            });
-
-            allPrevBtn.click(function(){
-                var curStep = $(this).closest(".setup-content"),
-                    curStepBtn = curStep.attr("id"),
-                    prevStepSteps = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
-
-                    prevStepSteps.removeAttr('disabled').trigger('click');
-            });
-
-            allNextBtn.click(function(){
-                var curStep = $(this).closest(".setup-content"),
-                    curStepBtn = curStep.attr("id"),
-                    nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
-                    curInputs = curStep.find("input[type='text'],input[type='url']"),
-                    isValid = true;
-
-                $(".form-group").removeClass("has-error");
-                for(var i=0; i< curInputs.length; i++){
-                    if (!curInputs[i].validity.valid){
-                        isValid = false;
-                        $(curInputs[i]).closest(".form-group").addClass("has-error");
-                    }
-                }
-
-                if (isValid)
-                    nextStepWizard.removeAttr('disabled').trigger('click');
-            });
-
-            $('div.setup-panel div a.btn-indigo').trigger('click');
 
             //Quitanto publicidad del hostin
             $("a[title='Hosted on free web hosting 000webhost.com. Host your own website for FREE.']").css("display","none");
@@ -630,44 +258,6 @@
 </body>
 
 </html>
-
- <!-- Central Modal modalLugares Info-->
-<div class="modal fade" id="modalLugares" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
-        <!--Content-->
-        <div class="modal-content">
-            <!--Header-->
-            <div class="modal-header" style="background-color: #37474F !important;">
-                <p class="heading lead"> Info </p>
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="white-text">&times;</span>
-                </button>
-            </div>
-
-            <!--Body-->
-            <div class="modal-body">
-                <div class="text-center">
-                    
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam
-                        blanditiis ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat.
-                        Esse ratione fuga, enim, ab officiis totam.
-                    </p>
-                </div>
-                <img src="img/galeria/2.jpg" alt="" class="img-fluid img-responsive" style="width: 1600px !important; height: 300px !important;">
-
-            </div>
-
-            <!--Footer
-            <div class="modal-footer">
-                <a type="button" class="btn btn-info">Get it now <i class="fa fa-diamond ml-1"></i></a>
-                <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
-            </div>-->
-        </div>
-        <!--/.Content-->
-    </div>
-</div>
-<!-- Central Modal modalLugares Info-->
 
  <!-- Central Modal modalInvitado Info-->
 <div class="modal fade" id="modalInvitado" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -779,14 +369,14 @@
 </div>
 <!-- Central Modal modalInvitado Info-->
 
-<!-- Central Modal modalPatrocinador Info-->
-<div class="modal fade" id="modalPatrocinador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- Central Modal modalInvitado Info-->
+<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
         <!--Content-->
         <div class="modal-content">
             <!--Header-->
             <div class="modal-header" style="background-color: #37474F !important;">
-                <p class="heading lead"> Patrocinador </p>
+                <p class="heading lead">Invitado</p>
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" class="white-text">&times;</span>
@@ -795,77 +385,87 @@
 
             <!--Body-->
             <div class="modal-body">
-                
-                <h2 class="text-center font-weight-bold pt-4 pb-5"><strong>Registro de Patrocinador</strong></h2>
+               <!-- Grid row -->
+               <div class="row" data-wow-delay="0.4s">
 
-                <!-- Stepper -->
-                <div class="steps-form">
-                    <div class="steps-row setup-panel">
-                        <div class="steps-step">
-                            <a href="#step-1" type="button" class="btn btn-indigo btn-circle">1</a>
-                            <p>Pate 1</p>
-                        </div>
-                        <div class="steps-step">
-                            <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                            <p>Pate 2</p>
-                        </div>
-                        <div class="steps-step">
-                            <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                            <p>Pate 3</p>
-                        </div>
-                    </div>
-                </div>
+                   <!-- Grid column -->
+                   <div class="col-lg-7">
+                       <form>
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="form41" class="form-control">
+                                           <label for="form41" class="">Su Nombre</label>
+                                       </div>
+                                   </div>
+                               </div>
 
-                <form role="form" action="" method="post">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="form52" class="form-control">
+                                           <label for="form52" class="">Correo</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
 
-                    <!-- First Step -->
-                    <div class="row setup-content" id="step-1">
-                        <div class="col-md-12">
-                            <h3 class="font-weight-bold pl-0 my-4"><strong>Parte 1</strong></h3>
-                            <div class="form-group md-form">
-                                <label for="yourName" data-error="wrong" data-success="right">Primer Nombre</label>
-                                <input id="yourName" type="text" required="required" class="form-control validate">
-                            </div>
-                            <div class="form-group md-form mt-3">
-                                <label for="yourLastName" data-error="wrong" data-success="right">Segundo Nombre</label>
-                                <input id="yourLastName" type="text" required="required" class="form-control validate">
-                            </div>
-                            <div class="form-group md-form mt-3">
-                                <label for="yourAddress" data-error="wrong" data-success="right">Dirección</label>
-                                <textarea id="yourAddress" type="text" required="required" rows="2" class="md-textarea validate form-control"></textarea>
-                            </div>
-                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Siguiente</button>
-                        </div>
-                    </div>
+                           <!-- Second row -->
+                           <div class="row">
+                               <div class="col-md-12">
+                                   <div class="md-form">
+                                       <input type="text" id="form51" class="form-control">
+                                       <label for="form51" class="">Asunto</label>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Second row -->
 
-                    <!-- Second Step -->
-                    <div class="row setup-content" id="step-2">
-                        <div class="col-md-12">
-                            <h3 class="font-weight-bold pl-0 my-4"><strong>Parte 2</strong></h3>
-                            <div class="form-group md-form">
-                                <label for="companyName" data-error="wrong" data-success="right">Nombre de la Compañia</label>
-                                <input id="companyName" type="text" required="required" class="form-control validate">
-                            </div>
-                            <div class="form-group md-form mt-3">
-                                <label for="companyAddress" data-error="wrong" data-success="right">Dirección de la Compañia</label>
-                                <input id="companyAddress" type="text" required="required" class="form-control validate">
-                            </div>
-                            <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Atras</button>
-                            <button class="btn btn-indigo btn-rounded nextBtn float-right" type="button">Next</button>
-                        </div>
-                    </div>
+                           <!-- Third row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-12">
 
-                    <!-- Third Step -->
-                    <div class="row setup-content" id="step-3">
-                        <div class="col-md-12">
-                            <h3 class="font-weight-bold pl-0 my-4"><strong>Parte 3</strong></h3>
-                            <button class="btn btn-indigo btn-rounded prevBtn float-left" type="button">Atras</button>
-                            <button class="btn btn-default btn-rounded float-right" type="submit">Finalizar</button>
-                        </div>
-                    </div>
+                                   <div class="md-form">
+                                       <textarea type="text" id="form76" class="md-textarea form-control" rows="3"></textarea>
+                                       <label for="form76">Su Mensaje</label>
+                                   </div>
 
-                </form>
+                               </div>
+                           </div>
+                           <!-- Third row -->
+                       </form>
 
+                       <div class="mb-5 mt-4" style="text-align: center !important; ">
+                           <a class="btn btn-rounded btn-orange-2 white-text" style="background: #37474F !important;">Enviar</a>
+                       </div>
+                   </div>
+                   <!-- Grid column -->
+
+                   <!-- Grid column -->
+                   <div class="col-lg-4" >
+                       <ul class="text-center list-unstyled float-md-right" style="margin-top: 100px; ">
+                           <li><i class="fa fa-map-marker fa-2x"></i>
+                               <p>Mexico</p>
+                           </li>
+
+                           <li><i class="fa fa-phone fa-2x"></i>
+                               <p>+ 01 234 567 89</p>
+                           </li>
+
+                           <li><i class="fa fa-envelope fa-2x"></i>
+                               <p>contact@acompañame.com</p>
+                           </li>
+                       </ul>
+                   </div>
+                   <!-- Grid column -->
+
+               </div>
             </div>
 
             <!--Footer
@@ -877,16 +477,16 @@
         <!--/.Content-->
     </div>
 </div>
-<!-- Central Modal modalPatrocinador Info-->
+<!-- Central Modal modalInvitado Info-->
 
-<!-- Central Modal modalAcompanante Info-->
-<div class="modal fade" id="modalAcompanante" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- Central Modal modalInvitado Info-->
+<div class="modal fade" id="modalPatrocinador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
         <!--Content-->
         <div class="modal-content">
             <!--Header-->
             <div class="modal-header" style="background-color: #37474F !important;">
-                <p class="heading lead"> Acompañante </p>
+                <p class="heading lead">Patrocinador</p>
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" class="white-text">&times;</span>
@@ -895,141 +495,242 @@
 
             <!--Body-->
             <div class="modal-body">
-                
-                 <div class="col-md-12">
-                    <h3 class="font-weight-bold pl-0 my-4"><strong>Informacion Basica</strong></h3>
-                    <div class="form-group md-form">
-                        <label for="yourEmail-2" data-error="wrong" data-success="right">Correo</label>
-                        <input id="yourEmail-2" type="email" required="required" class="form-control validate">
-                    </div>
-                    <div class="form-group md-form">
-                        <label for="yourUsername-2" data-error="wrong" data-success="right">Nombre</label>
-                        <input id="yourUsername-2" type="text" required="required" class="form-control validate">
-                    </div>
-                    <div class="form-group md-form mt-3">
-                        <label for="yourPassword-2" data-error="wrong" data-success="right">Contraseña</label>
-                        <input id="yourPassword-2" type="password" required="required" class="form-control validate">
-                    </div>
-                    <div class="form-group md-form mt-3">
-                        <label for="repeatPassword-2" data-error="wrong" data-success="right">Repetir Contraseña</label>
-                        <input id="repeatPassword-2" type="password" required="required" class="form-control validate">
-                    </div>
-                </div>
+               <!-- Grid row -->
+               <div class="row" data-wow-delay="0.4s">
 
+                   <!-- Grid column -->
+                   <div class="col-lg-12">
+                       <form>
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formNombre" class="form-control">
+                                           <label for="formNombre" class="">Nombre de Usuario</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="password" id="formContrasena" class="form-control">
+                                           <label for="formContrasena" class="">Contraseña</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-12">
+                               	   <label for="" class=""><strong>Situación Sentimental</strong> </label>
+                                   <div class="form-check">
+                                       <input type="checkbox" class="form-check-input" id="soltero">
+                                       <label class="form-check-label" for="soltero">Soltero</label>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="casado">
+                                       <label class="form-check-label" for="casado">Casado </label>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="divorciado">
+                                       <label class="form-check-label" for="divorciado">Divorciado </label>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="viudo">
+                                       <label class="form-check-label" for="viudo">Viudo </label>
+                                   </div>
+                               </div>
+								
+							   <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formUsuario" class="form-control">
+                                           <label for="formUsuario" class="">Usuario</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                              <div class="col-md-6">
+                             	   <label for="" class=""><strong>País</strong> </label>
+                                 <div class="form-check">
+                                     <input type="checkbox" class="form-check-input" id="mexico">
+                                     <label class="form-check-label" for="mexico">mexico</label>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <input type="checkbox" class="form-check-input" id="usa">
+                                     <label class="form-check-label" for="usa">USA </label>
+                                 </div>
+                             </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formCodigo" class="form-control">
+                                           <label for="formCodigo" class="">Codigo Postal</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formTitulo" class="form-control">
+                                           <label for="formTitulo" class="">Titulo Saludo</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formFecha" class="form-control">
+                                           <label for="formFecha" class="">Fecha Nacimiento</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formAltura" class="form-control">
+                                           <label for="formAltura" class="">Altura</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formPeso" class="form-control">
+                                           <label for="formPeso" class="">Peso</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formComplexion" class="form-control">
+                                           <label for="formComplexion" class="">Complexion</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formColoresOjo" class="form-control">
+                                           <label for="formColoresOjo" class="">Colores de Ojo</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formColoresPiel" class="form-control">
+                                           <label for="formColoresPiel" class="">Colores de Piel</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+							
+							<!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formEmail" class="form-control">
+                                           <label for="formEmail" class="">Email</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formTelefono" class="form-control">
+                                           <label for="formTelefono" class="">Telefono</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+                         
+                         <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formTerm" class="form-control">
+                                           <label for="formTerm" class="">Terminos y Condiciones</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formFoto" class="form-control">
+                                           <label for="formFoto" class="">Agregar Foto</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                       </form>
+
+                       <div class="mb-5 mt-4" style="text-align: center !important; ">
+                           <a class="btn btn-rounded btn-orange-2 white-text" style="background: #37474F !important;">Enviar</a>
+                       </div>
+                   </div>
+                   <!-- Grid column -->
+               </div>
             </div>
 
-            
+            <!--Footer
             <div class="modal-footer">
-                <a type="button" class="btn btn-info" style="color: #FFF !important; background-color:  #37474F !important;" >Registrar <i class="fa fa-diamond ml-1"></i></a>
-                <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal" style="border-color: #37474F !important; color: #37474F !important;" >Cancelar</a>
-            </div>
+                <a type="button" class="btn btn-info">Get it now <i class="fa fa-diamond ml-1"></i></a>
+                <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
+            </div>-->
         </div>
         <!--/.Content-->
     </div>
 </div>
-<!-- Central Modal modalAcompanante Info-->
-
-<div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog cascading-modal" role="document">
-        <!--Content-->
-        <div class="modal-content">
-
-            <!--Modal cascading tabs-->
-            <div class="modal-c-tabs">
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-2 light-blue darken-3" role="tablist" style="background-color: #37474F !important;">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="fa fa-user mr-1"></i> Patrocinador</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="fa fa-user-plus mr-1"></i> Acompañante</a>
-                    </li>
-                </ul>
-
-                <!-- Tab panels -->
-                <div class="tab-content">
-                    <!--Panel 7-->
-                    <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-                        <!--Body-->
-                        <div class="modal-body mb-1">
-                            <div class="md-form form-sm mb-5">
-                                <i class="fa fa-envelope prefix"></i>
-                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput12">Correo</label>
-                            </div>
-
-                            <div class="md-form form-sm mb-5">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput13">Contraseña</label>
-                            </div>
-
-                            <div class="md-form form-sm mb-4">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repetir Contraseña</label>
-                            </div>
-
-                            <div class="text-center form-sm mt-2">
-                                <button type="button" class="btn btn-outline-primary waves-effect" style="width: 200px; border: 2px solid #201C1C !important; color: #201C1C !important;"> Registro<i class="fa fa-sign-in ml-1"></i></button>
-                            </div>
-                        </div>
-                        <!--Footer
-                        <div class="modal-footer">
-                            <div class="options text-center text-md-right mt-1">
-                                <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                                <p>Forgot <a href="#" class="blue-text">Password?</a></p>
-                            </div>
-                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-                        </div>-->
-
-                    </div>
-                    <!--/.Panel 7-->
-
-                    <!--Panel 8-->
-                    <div class="tab-pane fade" id="panel8" role="tabpanel">
-
-                        <!--Body-->
-                        <div class="modal-body">
-                            <div class="md-form form-sm mb-5">
-                                <i class="fa fa-envelope prefix"></i>
-                                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput12">Correo</label>
-                            </div>
-
-                            <div class="md-form form-sm mb-5">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput13">Contraseña</label>
-                            </div>
-
-                            <div class="md-form form-sm mb-4">
-                                <i class="fa fa-lock prefix"></i>
-                                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                                <label data-error="wrong" data-success="right" for="modalLRInput14">Repetir Contraseña</label>
-                            </div>
-
-                            <div class="text-center form-sm mt-2">
-                                <button type="button" class="btn btn-outline-primary waves-effect" style="width: 200px; border: 2px solid #201C1C !important; color: #201C1C !important;"> Registro<i class="fa fa-sign-in ml-1"></i></button>
-                            </div>
-
-                        </div>
-                        <!--Footer
-                        <div class="modal-footer">
-                            <div class="options text-right">
-                                <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
-                            </div>
-                            <button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
-                        </div>-->
-                    </div>
-                    <!--/.Panel 8-->
-                </div>
-
-            </div>
-        </div>
-        <!--/.Content-->
-    </div>
-</div>
-<!--Modal: Login / Register Form-->
+<!-- Central Modal modalInvitado Info-->
