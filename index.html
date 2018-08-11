@@ -218,7 +218,7 @@
                     <!-- Grid column -->
                     <div class="col-md-6 mb-1 mt-1 wow fadeIn" data-wow-delay="0.4s">
                         <!--<i class="fa fa-users orange-text-2 fa-4x mb-4"></i>-->
-                        <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalRegistro">ACOMPAÑANTE</button>
+                        <button type="button" class="btn btn-outline-primary waves-effect" style="width: 300px; border: 2px solid #D4D4D4 !important; color: #D4D4D4 !important;" data-toggle="modal" data-target="#modalAcompanante">ACOMPAÑANTE</button>
                         <p class="text-justify">Si eres joven, atractivo o atractiva, atrévete a ganar por salir en una cita a platicar, comer, ir al cine, bailar, concierto, fiesta, bar, un evento público o privado si eres de mente más abierta. No importa si eres hombre o mujer, si eres hetero o no, sabemos que podemos unir personas afines  y lo que empieza como una cita con un patrocinador, pueda terminar dándote estabilidad emocional y económica. Puede mantener su privacidad con su cara con filtro o antifas</p>
                     </div>
                     <!-- Grid column -->
@@ -479,7 +479,7 @@
 </div>
 <!-- Central Modal modalInvitado Info-->
 
- <!-- Central Modal modalInvitado Info-->
+ <!-- Central Modal modalPatrocinador Info-->
 <div class="modal fade" id="modalPatrocinador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
         <!--Content-->
@@ -647,8 +647,8 @@
                                <div class="col-md-6">
                                    <div class="md-form">
                                        <div class="md-form">
-                                           <input type="text" id="formColoresOjo" class="form-control">
-                                           <label for="formColoresOjo" class="">Colores de Ojo</label>
+                                           <label for="formColoresOjo" class="">Colores de Ojo</label><br><br>
+                                           <input type="color" id="formColoresOjo" class="form-control">
                                        </div>
                                    </div>
                                </div>
@@ -657,8 +657,8 @@
                                <div class="col-md-6">
                                    <div class="md-form">
                                        <div class="md-form">
-                                           <input type="text" id="formColoresPiel" class="form-control">
-                                           <label for="formColoresPiel" class="">Colores de Piel</label>
+                                           <label for="formColoresPiel" class="">Colores de Piel</label><br><br>                                           
+                                           <input type="color" id="formColoresPiel" class="form-control">
                                        </div>
                                    </div>
                                </div>
@@ -694,22 +694,19 @@
                            <div class="row">
                                <!-- Grid column -->
                                <div class="col-md-6">
-                                   <div class="md-form">
-                                       <div class="md-form">
-                                           <input type="text" id="formTerm" class="form-control">
-                                           <label for="formTerm" class="">Terminos y Condiciones</label>
-                                       </div>
-                                   </div>
+                               	  <label for="" class=""><strong>Terminos y Condiciones</strong> </label>
+                                  <div class="form-check">
+                                      <input type="checkbox" id="checkbox114" class="form-check-input">
+                                      <label for="checkbox114" class="form-check-label">Aceptar</label>
+                                  </div>
                                </div>
 
                                <!-- Grid column -->
                                <div class="col-md-6">
-                                   <div class="md-form">
                                        <div class="md-form">
-                                           <input type="text" id="formFoto" class="form-control">
+                                           <input type="file" id="formFoto" class="form-control">
                                            <label for="formFoto" class="">Agregar Foto</label>
                                        </div>
-                                   </div>
                                </div>
                            </div>
                            <!-- Grid row -->
@@ -733,4 +730,257 @@
         <!--/.Content-->
     </div>
 </div>
-<!-- Central Modal modalInvitado Info-->
+<!-- Central Modal modalPatrocinador Info-->
+
+ <!-- Central Modal modalAcompanante Info-->
+<div class="modal fade" id="modalAcompanante" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-notify modal-info" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header" style="background-color: #37474F !important;">
+                <p class="heading lead">Acompañante</p>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+               <!-- Grid row -->
+               <div class="row" data-wow-delay="0.4s">
+
+                   <!-- Grid column -->
+                   <div class="col-lg-12">
+                       <form>
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formNombre" class="form-control">
+                                           <label for="formNombre" class="">Nombre de Usuario</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="password" id="formContrasena" class="form-control">
+                                           <label for="formContrasena" class="">Contraseña</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-12">
+                               	   <label for="" class=""><strong>Situación Sentimental</strong> </label>
+                                   <div class="form-check">
+                                       <input type="checkbox" class="form-check-input" id="soltero">
+                                       <label class="form-check-label" for="soltero">Soltero</label>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="casado">
+                                       <label class="form-check-label" for="casado">Casado </label>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="divorciado">
+                                       <label class="form-check-label" for="divorciado">Divorciado </label>
+                                       &nbsp;&nbsp;&nbsp;&nbsp;
+                                       <input type="checkbox" class="form-check-input" id="viudo">
+                                       <label class="form-check-label" for="viudo">Viudo </label>
+                                   </div>
+                               </div>
+								
+							   <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formUsuario" class="form-control">
+                                           <label for="formUsuario" class="">Usuario</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                              <div class="col-md-6">
+                             	   <label for="" class=""><strong>País</strong> </label>
+                                 <div class="form-check">
+                                     <input type="checkbox" class="form-check-input" id="mexico">
+                                     <label class="form-check-label" for="mexico">mexico</label>
+										&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <input type="checkbox" class="form-check-input" id="usa">
+                                     <label class="form-check-label" for="usa">USA </label>
+                                 </div>
+                             </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formCodigo" class="form-control">
+                                           <label for="formCodigo" class="">Codigo Postal</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formTitulo" class="form-control">
+                                           <label for="formTitulo" class="">Titulo Saludo</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formFecha" class="form-control">
+                                           <label for="formFecha" class="">Fecha Nacimiento</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formAltura" class="form-control">
+                                           <label for="formAltura" class="">Altura</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formPeso" class="form-control">
+                                           <label for="formPeso" class="">Peso</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formComplexion" class="form-control">
+                                           <label for="formComplexion" class="">Complexion</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                           <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <label for="formColoresOjo" class="">Colores de Ojo</label><br><br>
+                                           <input type="color" id="formColoresOjo" class="form-control">
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <label for="formColoresPiel" class="">Colores de Piel</label><br><br>                                           
+                                           <input type="color" id="formColoresPiel" class="form-control">
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+							
+							<!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formEmail" class="form-control">
+                                           <label for="formEmail" class="">Email</label>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                   <div class="md-form">
+                                       <div class="md-form">
+                                           <input type="text" id="formTelefono" class="form-control">
+                                           <label for="formTelefono" class="">Telefono</label>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+                         
+                         <!-- Grid row -->
+                           <div class="row">
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                               	  <label for="" class=""><strong>Terminos y Condiciones</strong> </label>
+                                  <div class="form-check">
+                                      <input type="checkbox" id="checkbox114" class="form-check-input">
+                                      <label for="checkbox114" class="form-check-label">Aceptar</label>
+                                  </div>
+                               </div>
+
+                               <!-- Grid column -->
+                               <div class="col-md-6">
+                                       <div class="md-form">
+                                           <input type="file" id="formFoto" class="form-control">
+                                           <label for="formFoto" class="">Agregar Foto</label>
+                                       </div>
+                               </div>
+                           </div>
+                           <!-- Grid row -->
+
+                       </form>
+
+                       <div class="mb-5 mt-4" style="text-align: center !important; ">
+                           <a class="btn btn-rounded btn-orange-2 white-text" style="background: #37474F !important;">Enviar</a>
+                       </div>
+                   </div>
+                   <!-- Grid column -->
+               </div>
+            </div>
+
+            <!--Footer
+            <div class="modal-footer">
+                <a type="button" class="btn btn-info">Get it now <i class="fa fa-diamond ml-1"></i></a>
+                <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, thanks</a>
+            </div>-->
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+<!-- Central Modal modalAcompanante Info-->
