@@ -171,6 +171,19 @@
             //Quitanto publicidad del hostin
             $("a[title='Hosted on free web hosting 000webhost.com. Host your own website for FREE.']").css("display","none");
 
+            //activacion de los select
+            
+            
+             $('#sitaucion_sentimental_patro').material_select();
+             $('#pais_patro').material_select();
+             $('#color_ojo_patro').material_select();
+             $('#color_piel_patro').material_select();
+
+             $('#sitaucion_sentimental_acomp').material_select();
+             $('#pais_acomp').material_select();
+             $('#color_ojo_acomp').material_select();
+             $('#color_piel_acomp').material_select();
+
         });
     </script>
     
@@ -334,13 +347,9 @@
                            <!-- Grid row -->
                            <div class="row">
                                <!-- Grid column -->
-                               <div class="col-md-6" style="margin-top: 8px !important">
-           
-     
-                                 <label data-error="wrong" data-success="right">Situación Sentimental</label>
-                                 <br>
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
                                  <!--Blue select-->
-                                 <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="sitaucion_sentimental_patro" >
                                      <option value="">Seleccione</option>
                                      <option value="soltero">soltero</option>
                                      <option value="casado">casado</option>
@@ -348,6 +357,7 @@
                                      <option value="viudo">viudo</option>
                                  </select>
                                  <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Situación Sentimental</label>
                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
                 
@@ -369,18 +379,17 @@
                            <!-- Grid row -->
                            <div class="row">
                                <!-- Grid column -->
-                                <!-- Grid column -->
-                              <div class="col-md-6">
-                                 <label data-error="wrong" data-success="right">Pais</label>
-                                  <br>
-                                 <!--Blue select-->
-                                 <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                     <option value="">Seleccione</option>
-                                     <option value="mexico">Mexico</option>
-                                     <option value="usa">USA</option>
-                                 </select>
-                                 <!--/Blue select-->
-                                 <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                
+                             <div class="col-md-6" style="margin-top: 16px !important">                                 
+                               <!--Blue select-->
+                               <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="pais_patro" >
+                                   <option value="">Seleccione</option>
+                                   <option value="mexico">Mexico</option>
+                                   <option value="usa">USA</option>
+                               </select>
+                               <!--/Blue select-->
+                               <label data-error="wrong" data-success="right">Pais</label>
+                                <ul style="color:#ff0009">*Campo obligatorio</ul>
                              </div>
 
                                <div class="col-md-6">
@@ -408,18 +417,14 @@
                                            <label for="formTitulo" class="">Titulo Saludo</label>
                                        </div>
                                    </div>
-                                   <ul style="color:#5ec02b">*Campo opcional</ul>
+                                   <ul style="color:#5ec02b;">*Campo opcional</ul>
                                </div>
 
                                <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <div class="md-form">
-                                       <div class="md-form">
-                                           <input type="text" id="formFecha" class="form-control">
-                                           <label for="formFecha" class="">Fecha Nacimiento</label>
-                                       </div>
-                                   </div>
-                                   <ul style="color:#5ec02b">*Campo opcional</ul>
+                               <div class="col-md-6">                                   
+                                  <label for="formFecha" class="">Fecha Nacimiento</label>
+                                  <input type="date" id="formFecha" class="form-control">
+                                  <ul style="color:#5ec02b">*Campo opcional</ul>                                   
                                </div>
 
                               
@@ -467,42 +472,39 @@
                                   <ul style="color:#5ec02b">*Campo opcional</ul>
                                </div>
                                <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <label data-error="wrong" data-success="right">Color de Ojo</label>
-                                    <br>
-                                   <!--Blue select-->
-                                   <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                       <option value="">Seleccione</option>
-                                       <option value="verde">verde</option>
-                                       <option value="azul">azul</option>
-                                       <option value="marron">marron</option>
-                                       <option value="negro">negro</option>
-                                   </select>
-                                   <!--/Blue select-->
-                                   <ul style="color:#5ec02b">*Campo opcional</ul>
+
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
+                                 <!--Blue select-->
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="color_ojo_patro" >
+                                     <option value="">Seleccione</option>
+                                     <option value="verde">verde</option>
+                                     <option value="azul">azul</option>
+                                     <option value="marron">marron</option>
+                                     <option value="negro">negro</option>
+                                 </select>
+                                 <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Color de Ojo</label>
+                                  <ul style="color:#5ec02b">*Campo opcional</ul>
                                </div>
 
                               
                            </div>
                            <!-- Grid row -->
 
-              
-              <!-- Grid row -->
                            <div class="row">
                                 <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <label data-error="wrong" data-success="right">Color de Piel</label>
-                                    <br>
-                                   <!--Blue select-->
-                                   <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                       <option value="">Seleccione</option>
-                                       <option value="blanca">blanca</option>
-                                       <option value="morena">morena</option>
-                                       <option value="negro">negra</option>
-                                       
-                                   </select>
-                                   <!--/Blue select-->
-                                   <ul style="color:#5ec02b">*Campo opcional</ul>
+
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
+                                 <!--Blue select-->
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="color_piel_patro" >
+                                     <option value="">Seleccione</option>
+                                     <option value="blanca">blanca</option>
+                                     <option value="morena">morena</option>
+                                     <option value="negro">negra</option>
+                                 </select>
+                                 <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Color de Piel</label>
+                                  <ul style="color:#5ec02b">*Campo opcional</ul>
                                </div>
 
                                <!-- Grid column -->
@@ -620,13 +622,9 @@
                            <!-- Grid row -->
                            <div class="row">
                                <!-- Grid column -->
-                               <div class="col-md-6" style="margin-top: 8px !important">
-           
-     
-                                 <label data-error="wrong" data-success="right">Situación Sentimental</label>
-                                 <br>
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
                                  <!--Blue select-->
-                                 <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="sitaucion_sentimental_acomp" >
                                      <option value="">Seleccione</option>
                                      <option value="soltero">soltero</option>
                                      <option value="casado">casado</option>
@@ -634,6 +632,7 @@
                                      <option value="viudo">viudo</option>
                                  </select>
                                  <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Situación Sentimental</label>
                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
                 
@@ -655,18 +654,17 @@
                            <!-- Grid row -->
                            <div class="row">
                                <!-- Grid column -->
-                                <!-- Grid column -->
-                              <div class="col-md-6">
-                                 <label data-error="wrong" data-success="right">Pais</label>
-                                  <br>
-                                 <!--Blue select-->
-                                 <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                     <option value="">Seleccione</option>
-                                     <option value="mexico">Mexico</option>
-                                     <option value="usa">USA</option>
-                                 </select>
-                                 <!--/Blue select-->
-                                 <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                
+                             <div class="col-md-6" style="margin-top: 16px !important">                                 
+                               <!--Blue select-->
+                               <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="pais_acomp" >
+                                   <option value="">Seleccione</option>
+                                   <option value="mexico">Mexico</option>
+                                   <option value="usa">USA</option>
+                               </select>
+                               <!--/Blue select-->
+                               <label data-error="wrong" data-success="right">Pais</label>
+                                <ul style="color:#ff0009">*Campo obligatorio</ul>
                              </div>
 
                                <div class="col-md-6">
@@ -694,21 +692,16 @@
                                            <label for="formTitulo" class="">Titulo Saludo</label>
                                        </div>
                                    </div>
-                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
 
                                <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <div class="md-form">
-                                       <div class="md-form">
-                                           <input type="text" id="formFecha" class="form-control">
-                                           <label for="formFecha" class="">Fecha Nacimiento</label>
-                                       </div>
-                                   </div>
-                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
-                               </div>
 
-                              
+                                <div class="col-md-6">                                   
+                                   <label for="formFecha" class="">Fecha Nacimiento</label>
+                                   <input type="date" id="formFecha" class="form-control">
+                                    <ul style="color:#ff0009">*Campo obligatorio</ul>                  
+                                </div>
                            </div>
                            <!-- Grid row -->
 
@@ -722,7 +715,7 @@
                                            <label for="formAltura" class="">Altura</label>
                                        </div>
                                    </div>
-                                 <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
 
                                <!-- Grid column -->
@@ -733,10 +726,8 @@
                                            <label for="formPeso" class="">Peso</label>
                                        </div>
                                    </div>
-                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
-
-                             
                            </div>
                            <!-- Grid row -->
 
@@ -750,44 +741,39 @@
                                            <label for="formComplexion" class="">Complexion</label>
                                        </div>
                                    </div>
-                                 <ul style="color:#ff0009">*Campo obligatorio</ul>
-                               </div>
-                               <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <label data-error="wrong" data-success="right">Color de Ojo</label>
-                                    <br>
-                                   <!--Blue select-->
-                                   <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                       <option value="">Seleccione</option>
-                                       <option value="verde">verde</option>
-                                       <option value="azul">azul</option>
-                                       <option value="marron">marron</option>
-                                       <option value="negro">negro</option>
-                                   </select>
-                                   <!--/Blue select-->
                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
+                               <!-- Grid column -->
 
-                              
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
+                                 <!--Blue select-->
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="color_ojo_acomp" >
+                                     <option value="">Seleccione</option>
+                                     <option value="verde">verde</option>
+                                     <option value="azul">azul</option>
+                                     <option value="marron">marron</option>
+                                     <option value="negro">negro</option>
+                                 </select>
+                                 <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Color de Ojo</label>
+                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
+                               </div>
                            </div>
                            <!-- Grid row -->
 
-              
-              <!-- Grid row -->
                            <div class="row">
                                 <!-- Grid column -->
-                               <div class="col-md-6">
-                                   <label data-error="wrong" data-success="right">Color de Piel</label>
-                                    <br>
-                                   <!--Blue select-->
-                                   <select class="mdb-select colorful-select dropdown-primary" required="required" class="form-control " id="condiciones_fisica_inv" >
-                                       <option value="">Seleccione</option>
-                                       <option value="blanca">blanca</option>
-                                       <option value="morena">morena</option>
-                                       <option value="negro">negra</option>
-                                       
-                                   </select>
-                                   <!--/Blue select-->
+
+                               <div class="col-md-6" style="margin-top: 16px !important">                                 
+                                 <!--Blue select-->
+                                 <select class="mdb-select colorful-select dropdown-ins" required="required" class="form-control " id="color_piel_acomp" >
+                                     <option value="">Seleccione</option>
+                                     <option value="blanca">blanca</option>
+                                     <option value="morena">morena</option>
+                                     <option value="negro">negra</option>
+                                 </select>
+                                 <!--/Blue select-->
+                                 <label data-error="wrong" data-success="right">Color de Piel</label>
                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
 
@@ -801,8 +787,6 @@
                                    </div>
                                    <ul style=" color: #ff0009">* Campo Obligatorio</ul>
                                </div>
-
-                               
                            </div>
                            <!-- Grid row -->
                          
@@ -816,7 +800,7 @@
                                            <label for="formTelefono" class="">Telefono</label>
                                        </div>
                                    </div>
-                                  <ul style="color:#ff0009">*Campo obligatorio</ul>
+                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
 
 
@@ -831,8 +815,8 @@
                                <div class="col-md-6">
                                   <label for="" class=""><strong>Terminos y Condiciones</strong> </label>
                                   <div class="form-check">
-                                      <input type="checkbox" id="checkbox114" class="form-check-input">
-                                      <label for="checkbox114" class="form-check-label">Aceptar</label>
+                                      <input type="checkbox" id="checkbox2" class="form-check-input">
+                                      <label for="checkbox2" class="form-check-label">Aceptar</label>
                                   </div>
                                   <ul style="color:#ff0009">*Campo obligatorio</ul>
                                </div>
